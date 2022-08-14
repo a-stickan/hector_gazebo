@@ -27,6 +27,7 @@ find_package(sensor_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(rmw_implementation_cmake REQUIRED)
+find_package(gazebo_ros REQUIRED)
 
 ## Find gazebo
 if(POLICY CMP0054)
@@ -57,6 +58,7 @@ set(LIBS
     rclcpp
     tf2
     std_srvs
+    gazebo_ros
 )
 
 #######################################
